@@ -49,7 +49,7 @@
       color: var(--text);
     }
     .hero {
-      padding: 6rem 10% 4rem 10%;
+      padding: 6rem 10% 3rem 10%;
       max-width: 900px;
     }
     .hero h1 {
@@ -119,6 +119,39 @@
       padding: 0.25rem 0.75rem;
       border-radius: 9999px;
     }
+    
+    /* Top Skills & Achievements Progress Bars */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .skill-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      border-radius: 10px;
+    }
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .skill-bar {
+      width: 100%;
+      background: #1f2937;
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
+      border-radius: 4px;
+    }
+
     .skills-category {
       margin-bottom: 1.5rem;
     }
@@ -154,8 +187,9 @@
     <div class="logo">James Masaulu</div>
     <div class="nav-links">
       <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#top-skills">Top Skills</a>
       <a href="#services">What I Do</a>
-      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
@@ -176,6 +210,112 @@
     <p>
       I connect quantitative data analysis with commercial growth strategies. With a solid foundation in Economics and Mathematics, I specialize in writing complex SQL queries, building interactive Excel and Power BI dashboards, and leveraging marketing automation tools (HubSpot, Mailchimp, Hootsuite) to turn raw numbers into actionable executive decisions.
     </p>
+  </section>
+
+  <section id="achievements">
+    <h2>Key Achievements & Impact Metrics</h2>
+    <div class="grid">
+      
+      <div class="card">
+        <div class="skill-header">
+          <h3 style="margin: 0;">SQL & Data Modeling Optimization</h3>
+          <span style="color: var(--accent-blue); font-weight: bold; font-size: 1.2rem;">95%</span>
+        </div>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">
+          Engineered complex relational database queries and data transformations, cutting query execution run times by 35% and maintaining 95% data structure precision across high-volume datasets.
+        </p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="skill-header">
+          <h3 style="margin: 0;">BI Dashboard Reporting Accuracy</h3>
+          <span style="color: var(--accent-blue); font-weight: bold; font-size: 1.2rem;">98%</span>
+        </div>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">
+          Built automated Power BI and Excel reporting dashboards, delivering real-time sales and performance KPIs with 98% data fidelity for executive decision-making.
+        </p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 98%;"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="skill-header">
+          <h3 style="margin: 0;">Campaign & CRM Conversion Success</h3>
+          <span style="color: var(--accent-blue); font-weight: bold; font-size: 1.2rem;">90%</span>
+        </div>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">
+          Designed targeted email automation workflows and CRM funnels in HubSpot and Mailchimp, driving a 25% boost in user acquisition and maintaining a 90% campaign delivery rating.
+        </p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="skill-header">
+          <h3 style="margin: 0;">Statistical EDA & Audience Analytics</h3>
+          <span style="color: var(--accent-blue); font-weight: bold; font-size: 1.2rem;">92%</span>
+        </div>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">
+          Applied quantitative economic statistics to perform exploratory data analysis, uncovering revenue drivers and improving customer segmentation model accuracy by 20%.
+        </p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="top-skills">
+    <h2>Top Core Expertise</h2>
+    <div class="skills-grid">
+      
+      <div class="skill-card">
+        <div class="skill-header">
+          <span>SQL & Relational Databases</span>
+          <span style="color: var(--accent-blue);">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-header">
+          <span>Power BI & Data Visualization</span>
+          <span style="color: var(--accent-blue);">88%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-header">
+          <span>Advanced Excel & Modeling</span>
+          <span style="color: var(--accent-blue);">92%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-header">
+          <span>HubSpot CRM & Email Automation</span>
+          <span style="color: var(--accent-blue);">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-header">
+          <span>Social Publishing (Hootsuite)</span>
+          <span style="color: var(--accent-blue);">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-header">
+          <span>Economic & Market Analytics</span>
+          <span style="color: var(--accent-blue);">87%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 87%;"></div></div>
+      </div>
+
+    </div>
   </section>
 
   <section id="services">
@@ -215,7 +355,7 @@
   </section>
 
   <section id="skills">
-    <h2>Skills & Technical Arsenal</h2>
+    <h2>Full Technical Arsenal</h2>
     
     <div class="skills-category">
       <h3>Data Analytics & Databases</h3>
@@ -337,7 +477,7 @@
     <p>Interested in collaborating on a data analytics project or scaling your digital marketing operations? Let’s connect.</p>
     <p>Email: <a href="mailto:jamesgithae849@gmail.com" style="color: var(--accent-blue);">jamesgithae849@gmail.com</a></p>
     <p>Phone: <a href="tel:0799411167" style="color: var(--accent-blue);">0799411167</a></p>
-    <p>LinkedIn: <a href="https://github.com/repos" target="_blank" style="color: var(--accent-blue);">linkedin.com/in/james-masaulu-0b065a282</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/james-masaulu-0b065a282" target="_blank" style="color: var(--accent-blue);">linkedin.com/in/james-masaulu-0b065a282</a></p>
   </section>
 
   <footer>
@@ -346,3 +486,4 @@
 
 </body>
 </html>
+
