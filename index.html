@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Masaulu | Data & Growth Architect</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --accent-blue: #06b6d4;
+      --accent-purple: #8b5cf6;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border: #1f2937;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 10%;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      margin-left: 2rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: var(--text);
+    }
+    .hero {
+      padding: 6rem 10%;
+      max-width: 900px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero h1 span {
+      background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 1rem;
+    }
+    .btn-primary {
+      background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
+      color: #fff;
+    }
+    .btn-outline {
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    section {
+      padding: 4rem 10%;
+      border-top: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .tag {
+      background: #1f2937;
+      color: var(--accent-blue);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">James Masaulu</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Hi, I'm <span>James Masaulu</span></h1>
+    <p>
+      An Economics & Mathematics graduate combining statistical analytics, SQL modeling, Business Intelligence, and digital marketing strategies to turn complex data into actionable business growth.
+    </p>
+    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+  </header>
+
+  <section id="services">
+    <h2>What I Do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Data Analytics & BI</h3>
+        <p>Uncovering trends, modeling economic data, and building dynamic visual dashboards that empower executive decision-making.</p>
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Tableau</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing Strategy</h3>
+        <p>Executing performance-driven marketing campaigns, managing retention automation, and optimizing conversion funnels.</p>
+        <div class="tags">
+          <span class="tag">Google Ads</span>
+          <span class="tag">Meta Ads</span>
+          <span class="tag">SEO</span>
+          <span class="tag">CRM Automation</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>E-Commerce & Market Insights</h3>
+        <p>Analyzing customer acquisition metrics, lifetime value, and channel performance to increase store profitability.</p>
+        <div class="tags">
+          <span class="tag">Google Analytics 4</span>
+          <span class="tag">E-commerce Analytics</span>
+          <span class="tag">A/B Testing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Featured Work</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Business Ownership & Market Structure Analysis</h3>
+        <p>A breakdown of corporate shareholding structures versus executive management across major enterprises (e.g., Microsoft, Safaricom).</p>
+        <div class="tags">
+          <span class="tag">Market Research</span>
+          <span class="tag">Economic Analysis</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>E-commerce Conversion & Retention Funnel</h3>
+        <p>Built end-to-end performance tracking dashboards for customer acquisition and lifetime value optimization.</p>
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">SQL</span>
+          <span class="tag">GA4</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Economic Policy & Financial Indicators Model</h3>
+        <p>Analytical modeling evaluating macroeconomic indicators and public policy impacts to drive data-informed decision-making.</p>
+        <div class="tags">
+          <span class="tag">Economic Statistics</span>
+          <span class="tag">Quantitative Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Looking to collaborate on a data analytics project or scale your digital marketing operations? Let’s connect.</p>
+    <p>Email: <a href="mailto:jamesgithae849@gmail.com" style="color: var(--accent-blue);">jamesgithae849@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/james-masaulu-0b065a282" target="_blank" style="color: var(--accent-blue);">linkedin.com/in/james-masaulu-0b065a282</a></p>
+  </section>
+
+</body>
+</html>
