@@ -49,8 +49,17 @@
       color: var(--text);
     }
     .hero {
-      padding: 6rem 10% 3rem 10%;
+      padding: 5rem 10% 3rem 10%;
       max-width: 900px;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-blue);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+      margin-bottom: 1.5rem;
     }
     .hero h1 {
       font-size: 3rem;
@@ -119,8 +128,6 @@
       padding: 0.25rem 0.75rem;
       border-radius: 9999px;
     }
-    
-    /* Top Skills & Achievements Progress Bars */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -151,7 +158,6 @@
       background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
       border-radius: 4px;
     }
-
     .skills-category {
       margin-bottom: 1.5rem;
     }
@@ -197,6 +203,7 @@
   </nav>
 
   <header class="hero">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGFpptQqB2Jhg/profile-displayphoto-scale_200_200/B4DZt.dkvJHQAY-/0/1767353243362?e=1792627200&v=beta&t=2NEPvol3Zfc44NQkGFL6aVKbK6E7fDeExdrVCNFEKSQ" alt="James Masaulu" class="profile-pic">
     <h1>Hi, I'm <span>James Masaulu</span></h1>
     <p>
       Data Analyst & Growth Specialist turning complex SQL databases, retail sales data, and web metrics into clear Business Intelligence dashboards and scalable growth systems.
@@ -486,4 +493,6 @@
 
 </body>
 </html>
+
+
 
